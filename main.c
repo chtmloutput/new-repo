@@ -79,7 +79,7 @@ if (begin == 1) {
 	count = 0; 
     target = 214; counter = 0; n1='2'; n2='1'; n3='4';
 
-	/*
+	/*              /* */           /*
     target = 312;
     target = 380;
     target = 328;
@@ -95,17 +95,26 @@ if (begin == 1) {
     target = 118;
     target = 123;
     target = 236;
- */
- 
+
+
     target = 346; count = 0; last = 0; whiz(target);
 	printf(" last=%d\n",last); 
 	count = 0; 
     target = 346; counter = 0; n1='3'; n2='4'; n3='6';
 
-/*
+
     target = 110;
     target = 107;
 	target = 173;
+ */
+
+    target = 173; count = 0; last = 0; whiz(target);
+	printf(" last=%d\n",last); 
+	count = 0; 
+    target = 173; counter = 0; n1='1'; n2='7'; n3='3';
+
+/*  
+
     target = 280;
     target = 453;
 
