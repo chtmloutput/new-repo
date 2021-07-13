@@ -67,8 +67,13 @@ if (begin == 1) {
 	count = 0; 
     target = 164; counter = 0; n1='1'; n2='6'; n3='4'; 
 	
+
+    target = 182; count = 0; last = 0; whiz(target);
+	/* last is set */ printf(" last=%d\n",last); /* exit(0); */
+	count = 0; 
+    target = 182; counter = 0; n1='1'; n2='8'; n3='2'; 
+
 	/*
-    target = 182; 
     target = 214;
     target = 312;
     target = 380;
