@@ -37,9 +37,7 @@ int count132,last;
 
 int main() { 
 
-
-
-    fp_out0 = fopen("output3x4","a"); 
+    fp_out0 = fopen("index.html","a"); 
     printf(" fp_out0=%d\n",fp_out0);
 
     fp_out1 = fopen("test","a"); 
@@ -109,9 +107,6 @@ int main() {
 	target = 228;
 
     target = 692; */
-
-    fprintf(fp_out0,"\n\n ************ %d ************\n",
-                    target);
 
  
     for ( i1=0; i1<2 ; i1++)
