@@ -222,12 +222,22 @@ void htmlcode(int appr){
 		for (i=0; i<10; i++) linkname[i] = filename[i];
 		linkname[9] = next[count132];
 		if (last == count) linkname[9] = 'a';
+		filename[10] = '.';
+		filename[11] = 'h';
+		filename[12] = 't';
+		filename[13] = 'm';
+		filename[14] = 'l';
+		filename[15] = '\0';
     }
 
     fp = fopen(filename,"w"); 
-    printf(" fp=%d\n",fp);
+    printf(" fp=%d\n",fp); 
 
+	printf("\n>");
+	for (i=0; i<15; i++) printf("%c",filename[i]);  
+	printf("<\n");
 
+	
     head(); heading();
 
 /*
@@ -386,7 +396,7 @@ void heading(){
 	fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 	
 	printf("\n");
-    for (i=0; i<10; i++)  
+    for (i=0; i<15; i++)  
         printf(">%c< last=%d count=%d",linkname[i],last,count);
     printf("\n");    
 
