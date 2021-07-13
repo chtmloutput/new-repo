@@ -95,20 +95,25 @@ if (begin == 1) {
     target = 118;
     target = 123;
     target = 236;
-    target = 346;
+ */
+ 
+    target = 346; count = 0; last = 0; whiz(target);
+	printf(" last=%d\n",last); 
+	count = 0; 
+    target = 346; counter = 0; n1='3'; n2='4'; n3='6';
+
+/*
     target = 110;
     target = 107;
 	target = 173;
     target = 280;
     target = 453;
-*/
+
     target = 223; count = 0; last = 0; whiz(target);
-	/* last is set */ printf(" last=%d\n",last); /* exit(0); */
+	printf(" last=%d\n",last); 
 	count = 0; 
     target = 223; counter = 0; n1='2'; n2='2'; n3='3';
 
-
-/*
     target = 194;
     target = 417;
     target = 240;
