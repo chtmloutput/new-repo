@@ -32,7 +32,7 @@ char changed5[8],changed6[8],changed7[8],changed8[8];
 char changed9[8],changedA[8],changedB[8],changedC[8];
 
 char n1,n2,n3,filename[20],linkname[20],next[100];
-int count132,last;
+int counter,last,begin;
 
 
 int main() { 
@@ -52,16 +52,23 @@ int main() {
 
     setchar();  
 
-    count = 0;
-	target = 132; last = 0; whiz(target); /* last is set */
-	printf(" last=%d\n",last);	/* exit(0); */
+	begin = 1; /*do the initial case of 132 */
+	begin = 0;
+
+if (begin == 1) {    
+	target = 132; count = 0; last = 0; whiz(target); 
+	/* last is set */ printf(" last=%d\n",last); /* exit(0); */
 	count = 0; 
-    target = 132; count132 = 0; n1='1'; n2='3'; n3='2'; 
+    target = 132; counter = 0; n1='1'; n2='3'; n3='2'; 
+} else {
 	
+    target = 164; count = 0; last = 0; whiz(target);
+	/* last is set */ printf(" last=%d\n",last); /* exit(0); */
+	count = 0; 
+    target = 164; counter = 0; n1='1'; n2='6'; n3='4'; 
 	
 	/*
-    target = 164;
-    target = 182;
+    target = 182; 
     target = 214;
     target = 312;
     target = 380;
@@ -107,7 +114,7 @@ int main() {
 	target = 228;
 
     target = 692; */
-
+}
  
     for ( i1=0; i1<2 ; i1++)
     for ( i2=0; i2<2 ; i2++)
@@ -139,8 +146,7 @@ int main() {
             htmlcode(target);
 
             printf("\n    total = %d    %s\n\n",total,filename);
-            fprintf(fp,"\n    total = %d %s\n\n",total,filename);
-
+            
             if (i1 == 1) printf("\t\t 118 \n");
 			if (i2 == 1) printf("\t\t  27 \n");
 			if (i3 == 1) printf("\t\t  87 \n");
@@ -214,21 +220,21 @@ void htmlcode(int appr){
 	if (last == 0) return;
 
     printf("\n entering htmlcode=%d \n",appr);
-    if (appr == 132) {
-        filename[6] = '1'; filename[7] = '3'; filename[8] = '2';
-        filename[9] = next[count132];
-        count132++;
+ 
+	filename[6] = n1; filename[7] = n2; filename[8] = n3;
+	filename[9] = next[counter];
+	counter++;
 
-		for (i=0; i<10; i++) linkname[i] = filename[i];
-		linkname[9] = next[count132];
-		if (last == count) linkname[9] = 'a';
-		filename[10] = '.';
-		filename[11] = 'h';
-		filename[12] = 't';
-		filename[13] = 'm';
-		filename[14] = 'l';
-		filename[15] = '\0';
-    }
+	for (i=0; i<10; i++) linkname[i] = filename[i];
+	linkname[9] = next[counter];
+	if (last == count) linkname[9] = 'a';
+	filename[10] = '.';
+	filename[11] = 'h';
+	filename[12] = 't';
+	filename[13] = 'm';
+	filename[14] = 'l';
+	filename[15] = '\0';
+
 
     fp = fopen(filename,"w"); 
     printf(" fp=%d\n",fp); 
@@ -260,7 +266,19 @@ void htmlcode(int appr){
             if (iC == 1) fprintf(fp,"\t\t  52 \n");
 */
 
-	for (i=0; i<7; i++) {
+	changed1[0] = '#'; 
+	changed2[0] = '#'; 
+	changed3[0] = '#'; 
+	changed4[0] = '#'; 
+	changed5[0] = '#'; 
+	changed6[0] = '#'; 
+	changed7[0] = '#'; 
+	changed8[0] = '#'; 
+	changed9[0] = '#'; 
+	changedA[0] = '#'; 
+	changedB[0] = '#'; 
+	changedC[0] = '#'; 
+	for (i=1; i<7; i++) {
 		changed1[i] = '0'; 
 		changed2[i] = '0'; 
 		changed3[i] = '0'; 
@@ -394,13 +412,14 @@ void heading(){
 	fprintf(fp,"three-x-four");
 	fprintf(fp,"</span>&nbsp;");
 	fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
-	
+/*	
 	printf("\n");
     for (i=0; i<15; i++)  
         printf(">%c< last=%d count=%d",linkname[i],last,count);
     printf("\n");    
 
-	/* fprintf(fp,"link.html"); */
+	fprintf(fp,"link.html"); 
+*/
 	for (i=0; i<10; i++) fprintf(fp,"%c",linkname[i]);
 	fprintf(fp,".html");
 	
@@ -582,8 +601,14 @@ fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"output132a.html"); fprintf(fp,"%c ",DQUOTE);
 fprintf(fp,"style="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"text-decoration: none;");
-fprintf(fp,"color: #000080;"); fprintf(fp,"%c>",DQUOTE);
+
+if (target == 132) 	fprintf(fp,"color: #FF0000;"); 
+else  				fprintf(fp,"color: #000080;");
+
+fprintf(fp,"%c>",DQUOTE);
 fprintf(fp,"132</a>&nbsp;");
+
+
 /*
 <a href="output164a.html" style="text-decoration: none;color: #000080;">164</a>&nbsp;
 */
@@ -591,7 +616,11 @@ fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"output164a.html"); fprintf(fp,"%c ",DQUOTE);
 fprintf(fp,"style="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"text-decoration: none;");
-fprintf(fp,"color: #000080;"); fprintf(fp,"%c>",DQUOTE);
+
+if (target == 164) 	fprintf(fp,"color: #FF0000;"); 
+else  				fprintf(fp,"color: #000080;");
+
+fprintf(fp,"%c>",DQUOTE);
 fprintf(fp,"164</a>&nbsp;");
 /*
 <a href="output182a.html" style="text-decoration: none;color: #000080;">182</a>&nbsp;
@@ -600,7 +629,11 @@ fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"output182a.html"); fprintf(fp,"%c ",DQUOTE);
 fprintf(fp,"style="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"text-decoration: none;");
-fprintf(fp,"color: #000080;"); fprintf(fp,"%c>",DQUOTE);
+
+if (target == 182) 	fprintf(fp,"color: #FF0000;"); 
+else  				fprintf(fp,"color: #000080;");
+
+fprintf(fp,"%c>",DQUOTE);
 fprintf(fp,"182</a>&nbsp;");
 /*
 <a href="output214a.html" style="text-decoration: none;color: #000080;">214</a>&nbsp;
