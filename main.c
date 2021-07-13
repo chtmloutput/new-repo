@@ -101,8 +101,14 @@ if (begin == 1) {
 	target = 173;
     target = 280;
     target = 453;
+*/
+    target = 223; count = 0; last = 0; whiz(target);
+	/* last is set */ printf(" last=%d\n",last); /* exit(0); */
+	count = 0; 
+    target = 214; counter = 0; n1='2'; n2='2'; n3='3';
 
-    target = 223;
+
+/*
     target = 194;
     target = 417;
     target = 240;
