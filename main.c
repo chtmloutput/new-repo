@@ -297,6 +297,7 @@ if (begin == 1) {
 	count = 0; 
     target = 494; counter = 0; n1='4'; n2='9'; n3='4';
 
+
     target = 544; count = 0; last = 0; whiz(target);
 	printf(" target=%d last=%d\n",target,last);  
 	count = 0; 
