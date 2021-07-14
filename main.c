@@ -242,49 +242,72 @@ if (begin == 1) {
 	count = 0; 
     target = 196; counter = 0; n1='1'; n2='9'; n3='6';
 
- 	/*              /* */           /*
 
-    target = 168;
-
-
-
-    target = 249;
+    target = 168; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 168; counter = 0; n1='1'; n2='6'; n3='8';
 
 
-
-    target = 278;
-
-
-
-    target = 139;
-
+ 
+    target = 249; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 249; counter = 0; n1='2'; n2='4'; n3='9';
 
 
-    target = 296;
+    target = 278; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 278; counter = 0; n1='2'; n2='7'; n3='8';
 
 
-
-	target = 396;
-
-
-
-	target = 148;
+    target = 139; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 139; counter = 0; n1='1'; n2='3'; n3='9';
 
 
+  
+    target = 296; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 296; counter = 0; n1='2'; n2='9'; n3='6';
 
-    target = 198;
+ 
+    target = 396; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 396; counter = 0; n1='3'; n2='9'; n3='6';
 
 
+    target = 148; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 148; counter = 0; n1='1'; n2='4'; n3='8';
 
-	target = 494;
+    target = 198; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 198; counter = 0; n1='1'; n2='9'; n3='8';
 
 
+    target = 494; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 494; counter = 0; n1='4'; n2='9'; n3='4';
 
-	target = 544; 
+    target = 544; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 544; counter = 0; n1='5'; n2='4'; n3='4';
+ 
 
+    target = 692; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 692; counter = 0; n1='6'; n2='9'; n3='2';
 
-
-    target = 692; */
 }
  
     for ( i1=0; i1<2 ; i1++)
