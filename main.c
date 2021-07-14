@@ -176,26 +176,26 @@ if (begin == 1) {
 	count = 0; 
     target = 110; counter = 0; n1='1'; n2='1'; n3='0';
 
-	/*              /* */           /*
-	
+
     target = 107; count = 0; last = 0; whiz(target);
 	printf(" target=%d last=%d\n",target,last);  
 	count = 0; 
     target = 107; counter = 0; n1='1'; n2='0'; n3='7';
 
-	/*              /* */           /*
 
     target = 173; count = 0; last = 0; whiz(target);
 	printf(" last=%d\n",last); 
 	count = 0; 
     target = 173; counter = 0; n1='1'; n2='7'; n3='3';
 
-   
+ 
+    target = 280; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 280; counter = 0; n1='2'; n2='8'; n3='0';
 
-    target = 280;
 
-
-
+ 
     target = 453; count = 0; last = 0; whiz(target);
 	printf(" last=%d\n",last); 
 	count = 0; 
@@ -207,29 +207,42 @@ if (begin == 1) {
 	count = 0; 
     target = 223; counter = 0; n1='2'; n2='2'; n3='3';
 
-    target = 194;
+
+    target = 194; count = 0; last = 0; whiz(target);
+	printf(" last=%d\n",last); 
+	count = 0; 
+    target = 194; counter = 0; n1='1'; n2='9'; n3='4';
+
+    target = 417; count = 0; last = 0; whiz(target);
+	printf(" last=%d\n",last); 
+	count = 0; 
+    target = 417; counter = 0; n1='4'; n2='1'; n3='7';
 
 
 
-    target = 417;
+    target = 240; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 240; counter = 0; n1='2'; n2='4'; n3='0';
 
 
+    target = 177; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 177; counter = 0; n1='1'; n2='7'; n3='7';
 
-    target = 240;
-
-
-
-    target = 177;
-
-
-
-    target = 221;
-
+    target = 221; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 221; counter = 0; n1='2'; n2='2'; n3='1';
 
 
-    target = 196;
+    target = 196; count = 0; last = 0; whiz(target);
+	printf(" target=%d last=%d\n",target,last);  
+	count = 0; 
+    target = 196; counter = 0; n1='1'; n2='9'; n3='6';
 
-
+ 	/*              /* */           /*
 
     target = 168;
 
