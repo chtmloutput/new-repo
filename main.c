@@ -85,11 +85,14 @@ if (begin == 1) {
 	count = 0; 
     target = 312; counter = 0; n1='3'; n2='1'; n3='2';
 
+ 	/*              /* */           /*
 
     target = 380; count = 0; last = 0; whiz(target);
 	printf(" last=%d\n",last);
 	count = 0; 
     target = 380; counter = 0; n1='3'; n2='8'; n3='0';
+
+
 
     target = 328; count = 0; last = 0; whiz(target);
 	printf(" last=%d\n",last);
@@ -108,7 +111,7 @@ if (begin == 1) {
 	count = 0; 
     target = 264; counter = 0; n1='2'; n2='6'; n3='4';
 
- 
+
     target = 428; count = 0; last = 0; whiz(target);
 	printf(" last=%d\n",last);
 	count = 0; 
@@ -151,7 +154,6 @@ if (begin == 1) {
     target = 118; counter = 0; n1='1'; n2='1'; n3='8';
 
 
-	/*              /* */           /*
 
     target = 123;
 
@@ -802,7 +804,11 @@ fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"output312a.html"); fprintf(fp,"%c ",DQUOTE);
 fprintf(fp,"style="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"text-decoration: none;");
-fprintf(fp,"color: #000080;"); fprintf(fp,"%c>",DQUOTE);
+
+if (target == 312) 	fprintf(fp,"color: #FF0000;"); 
+else  				fprintf(fp,"color: #000080;");
+
+fprintf(fp,"%c>",DQUOTE);
 fprintf(fp,"312</a>&nbsp;");
 /*
 <a href="output380a.html" style="text-decoration: none;color: #000080;">380</a>&nbsp;
@@ -811,7 +817,11 @@ fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"output380a.html"); fprintf(fp,"%c ",DQUOTE);
 fprintf(fp,"style="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"text-decoration: none;");
-fprintf(fp,"color: #000080;"); fprintf(fp,"%c>",DQUOTE);
+
+if (target == 380) 	fprintf(fp,"color: #FF0000;"); 
+else  				fprintf(fp,"color: #000080;");
+
+fprintf(fp,"%c>",DQUOTE);
 fprintf(fp,"380</a>&nbsp;");
 /*
 <a href="output328a.html" style="text-decoration: none;color: #000080;">328</a>&nbsp;
@@ -820,7 +830,11 @@ fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"output328a.html"); fprintf(fp,"%c ",DQUOTE);
 fprintf(fp,"style="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"text-decoration: none;");
-fprintf(fp,"color: #000080;"); fprintf(fp,"%c>",DQUOTE);
+
+if (target == 328) 	fprintf(fp,"color: #FF0000;"); 
+else  				fprintf(fp,"color: #000080;");
+
+fprintf(fp,"%c>",DQUOTE);
 fprintf(fp,"328</a>&nbsp;");
 /*
 <a href="output364a.html" style="text-decoration: none;color: #000080;">364</a>&nbsp;
@@ -829,7 +843,11 @@ fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"output364a.html"); fprintf(fp,"%c ",DQUOTE);
 fprintf(fp,"style="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"text-decoration: none;");
-fprintf(fp,"color: #000080;"); fprintf(fp,"%c>",DQUOTE);
+
+if (target == 364) 	fprintf(fp,"color: #FF0000;"); 
+else  				fprintf(fp,"color: #000080;");
+
+fprintf(fp,"%c>",DQUOTE);
 fprintf(fp,"364</a>&nbsp;");
 /*
 <a href="output264a.html" style="text-decoration: none;color: #000080;">264</a>&nbsp;
@@ -838,7 +856,11 @@ fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"output264a.html"); fprintf(fp,"%c ",DQUOTE);
 fprintf(fp,"style="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"text-decoration: none;");
-fprintf(fp,"color: #000080;"); fprintf(fp,"%c>",DQUOTE);
+
+if (target == 264) 	fprintf(fp,"color: #FF0000;"); 
+else  				fprintf(fp,"color: #000080;");
+
+fprintf(fp,"%c>",DQUOTE);
 fprintf(fp,"264</a>&nbsp;");
 /*
 <a href="output428a.html" style="text-decoration: none;color: #000080;">428</a>&nbsp;
@@ -847,7 +869,11 @@ fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"output428a.html"); fprintf(fp,"%c ",DQUOTE);
 fprintf(fp,"style="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"text-decoration: none;");
-fprintf(fp,"color: #000080;"); fprintf(fp,"%c>",DQUOTE);
+
+if (target == 428) 	fprintf(fp,"color: #FF0000;"); 
+else  				fprintf(fp,"color: #000080;");
+
+fprintf(fp,"%c>",DQUOTE);
 fprintf(fp,"428</a>&nbsp;");
 /*
 <a href="output440a.html" style="text-decoration: none;color: #000080;">440</a>&nbsp;
@@ -856,7 +882,11 @@ fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"output440a.html"); fprintf(fp,"%c ",DQUOTE);
 fprintf(fp,"style="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"text-decoration: none;");
-fprintf(fp,"color: #000080;"); fprintf(fp,"%c>",DQUOTE);
+
+if (target == 440) 	fprintf(fp,"color: #FF0000;"); 
+else  				fprintf(fp,"color: #000080;");
+
+fprintf(fp,"%c>",DQUOTE);
 fprintf(fp,"440</a>&nbsp;");
 /*
 <a href="output220a.html" style="text-decoration: none;color: #000080;">220</a>&nbsp;
@@ -865,7 +895,11 @@ fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"output220a.html"); fprintf(fp,"%c ",DQUOTE);
 fprintf(fp,"style="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"text-decoration: none;");
-fprintf(fp,"color: #000080;"); fprintf(fp,"%c>",DQUOTE);
+
+if (target == 220) 	fprintf(fp,"color: #FF0000;"); 
+else  				fprintf(fp,"color: #000080;");
+
+fprintf(fp,"%c>",DQUOTE);
 fprintf(fp,"220</a>&nbsp;");
 /*
 <a href="output510a.html" style="text-decoration: none;color: #000080;">510</a>&nbsp;
@@ -874,7 +908,11 @@ fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"output510a.html"); fprintf(fp,"%c ",DQUOTE);
 fprintf(fp,"style="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"text-decoration: none;");
-fprintf(fp,"color: #000080;"); fprintf(fp,"%c>",DQUOTE);
+
+if (target == 510) 	fprintf(fp,"color: #FF0000;"); 
+else  				fprintf(fp,"color: #000080;");
+
+fprintf(fp,"%c>",DQUOTE);
 fprintf(fp,"510</a>&nbsp;");
 /*
 <a href="output528a.html" style="text-decoration: none;color: #000080;">528</a>&nbsp;
@@ -883,7 +921,11 @@ fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"output528a.html"); fprintf(fp,"%c ",DQUOTE);
 fprintf(fp,"style="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"text-decoration: none;");
-fprintf(fp,"color: #000080;"); fprintf(fp,"%c>",DQUOTE);
+
+if (target == 528) 	fprintf(fp,"color: #FF0000;"); 
+else  				fprintf(fp,"color: #000080;");
+
+fprintf(fp,"%c>",DQUOTE);
 fprintf(fp,"528</a><br>");
 
 /**********************************************/
@@ -896,7 +938,11 @@ fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"output560a.html"); fprintf(fp,"%c ",DQUOTE);
 fprintf(fp,"style="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"text-decoration: none;");
-fprintf(fp,"color: #000080;"); fprintf(fp,"%c>",DQUOTE);
+
+if (target == 560) 	fprintf(fp,"color: #FF0000;"); 
+else  				fprintf(fp,"color: #000080;");
+
+fprintf(fp,"%c>",DQUOTE);
 fprintf(fp,"560</a>&nbsp;");
 /*
 <a href="output118a.html" style="text-decoration: none;color: #000080;">118</a>&nbsp;
@@ -905,7 +951,11 @@ fprintf(fp,"<a href="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"output118a.html"); fprintf(fp,"%c ",DQUOTE);
 fprintf(fp,"style="); fprintf(fp,"%c",DQUOTE);
 fprintf(fp,"text-decoration: none;");
-fprintf(fp,"color: #000080;"); fprintf(fp,"%c>",DQUOTE);
+
+if (target == 118) 	fprintf(fp,"color: #FF0000;"); 
+else  				fprintf(fp,"color: #000080;");
+
+fprintf(fp,"%c>",DQUOTE);
 fprintf(fp,"118</a>&nbsp;");
 /*
 <a href="output123a.html" style="text-decoration: none;color: #000080;">123</a>&nbsp;
