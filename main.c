@@ -303,12 +303,12 @@ if (begin == 1) {
 	count = 0; 
     target = 544; counter = 0; n1='5'; n2='4'; n3='4';
  
-
+/*
     target = 692; count = 0; last = 0; whiz(target);
 	printf(" target=%d last=%d\n",target,last);  
 	count = 0; 
     target = 692; counter = 0; n1='6'; n2='9'; n3='2';
-
+*/
 }
  
     for ( i1=0; i1<2 ; i1++)
