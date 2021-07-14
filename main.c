@@ -162,7 +162,8 @@ if (begin == 1) {
     target = 236; count = 0; last = 0; whiz(target);
 	printf(" target=%d last=%d\n",target,last);  
 	count = 0; 
-    target = 236; counter = 0; n1='2'; n2='3'; n3='4';
+    target = 236; counter = 0; n1='2'; n2='3'; n3='6';
+
 
 
     target = 346; count = 0; last = 0; whiz(target);
@@ -175,6 +176,8 @@ if (begin == 1) {
 	count = 0; 
     target = 110; counter = 0; n1='1'; n2='1'; n3='0';
 
+	/*              /* */           /*
+	
     target = 107; count = 0; last = 0; whiz(target);
 	printf(" target=%d last=%d\n",target,last);  
 	count = 0; 
